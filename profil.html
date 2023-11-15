@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>ENI - MEMORY - Profil</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jeu.html">Jouer</a></li>
+        </ul>
+    </nav>
+    <main>
+        <fieldset>
+            <legend>Profil</legend>
+            <img src="ressources/question.svg" alt="">
+            <form action="" method="POST">
+                <label for="nom">Nom d'utilisateur</label>
+                <hr>
+                <label for="email">Email</label>
+                <hr>
+            </form>
+            <label for="choix">Choix du Memory:</label>
+            <select name="selectmemory" id="selectmemory">
+                <option value="animaux" selected>Animaux</option>
+                <option value="animauxDomestiques">Animaux Domestiques</option>
+                <option value="chiens">Chiens</option>
+                <option value="dinosaures">Dinosaures</option>
+                <option value="legumes">Légumes</option>
+                
+            </select>
+            <img src="ressources/animaux/memory_detail_animaux.png" alt="cartes avec animaux">
+            <label for="taille">Taille du Memory:</label>
+            <select name="selectsize" id="selectsize">
+                <option value="valeur1"selected>4*3</option>
+                <option value="valeur2">5*5</option>
+                <option value="valeur3">4*4</option>
+                <option value="valeur4">3*3</option>
+            </select>
+            <button type="submit">Enregistrez Option</button>
+        </fieldset>
+    </main>
+</body>
+</html>

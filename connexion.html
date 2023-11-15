@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>ENI - MEMORY - Connecter</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jeu.html">Jouer</a></li>
+        </ul>
+    </nav>
+    <main>
+        <fieldset>
+            <legend>Connectez-vous:</legend>
+            <form action="" method="POST">
+                <label for="email">Entrez votre email</label>
+                <input type="text" id="email" name="email" placeholder="Votre email" title="Rentrez un email valide.">
+                <hr>
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" required
+                    pattern="^(?=.*[0-9])(?=.*[!@#$%^&*()-_+=])[a-zA-Z0-9!@#$%^&*()-_+=]{6,}$"
+                    title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum">
+                <hr>
+                <a href="profil.html">
+                    <button type="submit">Se connecter</button>
+                </a>
+                    <button type="reset">Annuler</button>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>

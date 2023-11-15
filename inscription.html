@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>ENI - MEMORY - S'inscrire</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="connexion.html">Se connecter</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="jeu.html">Jouer</a></li>
+        </ul>
+    </nav>
+    <main>
+        <fieldset>
+            <legend>Inscrivez-vous:</legend>
+                <form action="" method="POST">
+                <label for="nom">Nom d'utilisateur</label>
+                <input type="text" id="nom" name="nom" autofocus required placeholder="3 caractères minimum" pattern="[A-Za-z]{3,}"
+                    title="Choisissez un pseudo contenant au moins 3 caractères.">
+                <hr>
+                <label for="email">Entrez votre email</label>
+                <input type="text" id="email" name="email" placeholder="Votre email" title="Rentrez un email valide.">
+                <hr>
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" required pattern="^(?=.*[0-9])(?=.*[!@#$%^&*()-_+=])[a-zA-Z0-9!@#$%^&*()-_+=]{6,}$"
+                title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum">
+                <hr>
+                <p>Au moins un symbole, un chiffre, ainsi que 6 caractères minimum</p>
+                <label for="verifmdp">Confirmer le mot de passe</label>
+                <input type="password" id="verifmdp" name="verifmdp" placeholder="Confirmer le mot de passe" required pattern="^(?=.*[0-9])(?=.*[!@#$%^&*()-_+=])[a-zA-Z0-9!@#$%^&*()-_+=]{6,}$"
+                    title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum">
+                <hr>
+                <a href="profil.html">
+                    <button type="submit">Création du compte</button>
+                </a>
+                    <button type="reset">Annuler</button>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>
